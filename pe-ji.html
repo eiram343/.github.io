@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>スキルツリー自己紹介</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .center-node {
+      width: 120px;
+      height: 120px;
+      font-size: 20px;
+      font-weight: bold;
+      border-width: 4px;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center; color: #222; margin-top: 32px; margin-bottom: 0;">
+    えいらむスキルツリー
+  </h1>
+  <div class="skill-tree" style="width: 600px; height: 1400px; background: #f9f9f9; margin: 40px auto; border-radius: 16px; box-shadow: 0 2px 8px #ccc; position: relative;">
+    <!-- 線をSVGで描画 -->
+    <svg class="connections" width="600" height="1400" style="position: absolute; left: 0; top: 0;">
+      <!-- 8方向の線（中心から） -->
+      <line x1="300" y1="300" x2="300" y2="80" stroke="#888" stroke-width="2"/>   <!-- 上 -->
+      <line x1="300" y1="300" x2="520" y2="300" stroke="#888" stroke-width="2"/>   <!-- 右 -->
+      <line x1="300" y1="300" x2="300" y2="520" stroke="#888" stroke-width="2"/>   <!-- 下 -->
+      <line x1="300" y1="300" x2="80" y2="300" stroke="#888" stroke-width="2"/>    <!-- 左 -->
+      <!-- 下ノードからさらに下へ垂直に4つ（距離を広げる） -->
+      <line x1="300" y1="520" x2="300" y2="700" stroke="#888" stroke-width="2"/>
+      <line x1="300" y1="700" x2="300" y2="880" stroke="#888" stroke-width="2"/>
+      <line x1="300" y1="880" x2="300" y2="1060" stroke="#888" stroke-width="2"/>
+      <line x1="300" y1="1060" x2="300" y2="1240" stroke="#888" stroke-width="2"/>
+    </svg>
+    <!-- 中央ノード -->
+    <div class="skill-node center-node" style="left: 240px; top: 240px;">
+      <img src="aaaa.jpg" alt="アイコン" style="width:120px; height:120px;">
+      <div class="skill-detail">えいらむ<br> このスキルツリーの対象の人間<br> 誕生日は11月30日。17歳。</div>
+    </div>
+    <!-- 8方向ノード -->
+    <div class="skill-node" style="left: 260px; top: 40px;">
+      <img src="icon1.png" alt="アイコン">
+      <div class="skill-detail">名前：上</div>
+    </div>
+    <div class="skill-node" style="left: 480px; top: 260px;">
+      <img src="icon3.png" alt="アイコン">
+      <div class="skill-detail">名前：右</div>
+    </div>
+    <div class="skill-node" style="left: 260px; top: 480px;">
+      <img src="イラスト9.jpg" alt="アイコン"style="width:80px; height:78px;">
+      <div class="skill-detail">競技プログラミングを始める。<br>達成日時：2024/8/3</div>
+    </div>
+    <div class="skill-node" style="left: 40px; top: 260px;">
+      <img src="icon7.png" alt="アイコン">
+      <div class="skill-detail">名前：左</div>
+    </div>
+    <!-- 下ノードからさらに下へ垂直に4つ（距離を広げる） -->
+    <div class="skill-node" style="left: 260px; top: 680px;">
+      <img src="ggggg.png" alt="アイコン">
+      <div class="skill-detail">AtCoderで初めてコンテストに参加する。<br>達成日時：2024/8/10</div>
+    </div>
+    <div class="skill-node" style="left: 260px; top: 860px;">
+      <img src="iiiii.png" alt="アイコン" style="width:80px; height:78px;">
+      <div class="skill-detail">AtCoderで茶色になる。<br>達成日時：2025/1/4</div>
+    </div>
+    <div class="skill-node" style="left: 260px; top: 1040px;">
+      <img src="midori.png" alt="アイコン" class="grayscale" style="width:40px; height:45px;">
+      <div class="skill-detail">AtCoderで緑色になる。</div>
+    </div>
+    <div class="skill-node" style="left: 260px; top: 1220px;">
+      <img src="mizuiro.png" alt="アイコン" class="grayscale">
+      <div class="skill-detail">AtCoderで水色になる。</div>
+    </div>
+  </div>
+</body>
+</html>
